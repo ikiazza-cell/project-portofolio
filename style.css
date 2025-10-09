@@ -774,4 +774,38 @@ nav ul li a:hover {
     margin-right: 50px; /* Memusatkan secara horizontal */
     text-align: center; /* Opsional: untuk memusatkan teks */
     /* ... properti lain ... */
+
+}
+.container {
+  width: 90%; /* lebih fleksibel dari 900px */
+  margin: auto;
+}
+
+/* Untuk layar HP (maksimum 600px lebar) */
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  flex: 1 1 300px; /* otomatis mengecil di HP */
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
 }
